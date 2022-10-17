@@ -1,0 +1,3 @@
+SELECT e.Name 
+FROM Employee as e, Employee as m
+WHERE e.ManagerId = m.Id and e.Salary > m.Salary
