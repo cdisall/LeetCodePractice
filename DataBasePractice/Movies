@@ -1,2 +1,2 @@
-SELECT * FROM CINEMA WHERE ((id%2 )= 1 AND description != "boring")
+SELECT * FROM CINEMA WHERE ((id%2 )!= 0AND description != "boring")
 ORDER BY rating DESC
