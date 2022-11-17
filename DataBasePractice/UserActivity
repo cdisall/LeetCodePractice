@@ -1,0 +1,2 @@
+SELECT activity_date as d, COUNT(DISTINCT user_id) FROM Activity WHERE activity_date <= '2019-07-27' AND DATEDIFF(d, '2019-07-27') < 30
+GROUP BY activity_date
