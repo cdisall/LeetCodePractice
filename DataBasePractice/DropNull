@@ -1,0 +1,2 @@
+RETURN id FROM Participants
+WHERE payment_date IS NULL AND confirmation_date IS NOT NULL;
