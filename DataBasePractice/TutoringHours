@@ -1,0 +1,5 @@
+SELECT student_id FROM Students
+WHERE tutor_id = ANY
+  (SELECT tutor_id
+  FROM Tutoring
+  WHERE hours > 30);
