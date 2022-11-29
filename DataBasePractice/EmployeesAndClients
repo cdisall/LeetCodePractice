@@ -1,0 +1,4 @@
+SELECT Clients.ClientName, Employees.EmployeeID
+FROM Clients
+FULL OUTER JOIN Employees ON Clients.id=Employees.id
+ORDER BY Clients.ClientName;
