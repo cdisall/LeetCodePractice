@@ -1,0 +1,3 @@
+SELECT COUNT(SELECT student WHERE av > 80) class
+FROM grade
+GROUP BY class;
