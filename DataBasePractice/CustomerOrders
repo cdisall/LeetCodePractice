@@ -1,0 +1,4 @@
+SELECT Orders.OrderID, Customers.LastName, Customers.FirstName
+FROM Orders
+RIGHT JOIN Customers ON Orders.CustomerID = Customer.CustomerID
+ORDER BY Orders.OrderID;
