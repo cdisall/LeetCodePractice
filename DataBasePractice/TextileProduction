@@ -1,0 +1,4 @@
+SELECT City, Type FROM Plants WHERE Type = "Textile"
+UNION
+SELECT City FROM Warehouses WHERE Type = "Textile"
+ORDER BY City;
