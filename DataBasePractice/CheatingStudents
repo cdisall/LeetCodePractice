@@ -1,0 +1,4 @@
+SELECT DIFFERENCE(s1.answers, s2.answers), s1.id, s2.id
+FROM (SELECT student AS s1, student as s2 FROM Class 
+WHERE (s1.id != s2.id) AND (ABS(s1.row - s2.row) < 2 
+OR ABS(ASCII(s1.col)  - ASCII(s2.col)) < 2))
