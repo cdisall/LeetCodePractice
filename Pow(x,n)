@@ -1,0 +1,12 @@
+class Solution(object):
+    def myPow(self, x, n):
+        ans = self.rec(x, abs(n))
+        if n >= 0:
+            return ans
+        else:
+            return 1/ans
+        
+    def rec(self, x, n):    
+        if n > 0:
+           return x * self.rec(x,n-1)
+        return 1
