@@ -7,6 +7,9 @@ class Solution(object):
             return 1/ans
         
     def rec(self, x, n):    
-        if n > 0:
-           return x * self.rec(x,n-1)
-        return 1
+        if n ==0:
+             return 1
+        if n%2 == 0:
+            return self.rec(x*x, n/2)
+        else:
+            return x* self.rec(x, n-1)
